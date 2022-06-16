@@ -7,90 +7,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="vladislav, resume, cv">
   <meta name="description" content="Vladislav CV-website">
+  <link rel="stylesheet" href="styles.css">
   <title>Vladislav CV</title>
 </head>
 
 <body>
 
-  <img src="img/photo.jpg" alt="Vladislav Martsul photo" width="200">
+  <div class="container">
 
-  <h1>Vladislav Martsul</h1>
+    <div class="main_info">
 
-  <p>I'm a <strong>Junior Frontend Developer</strong> with <strong>6 months</strong> of work expirience in <strong>IT
-      companies</strong>.</p>
+      <img src="img/photo.jpg" alt="Vladislav Martsul photo" class="avatar">
 
-  <p>I like to <em>play the guitar</em>, <em>watch hockey</em> and of course <em>to code</em>.</p>
+      <div class="main_info_text">
 
-  <h2>My hobbies</h2>
+        <h1>Vladislav Martsul</h1>
 
-  <ol>
-    <li>Guitar</li>
-    <li>Skating</li>
-  </ol>
+        <p>I'm a Junior Frontend Developer with 6 months of work expirience in IT
+          companies.</p>
 
-  <h2>Work Expirience</h2>
+        <p>I like to play the guitar, watch hockey and of course to code.</p>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Work Name</th>
-        <th>Position</th>
-        <th>Year</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>GrodnoAutoService</td>
-        <td>Storekeeper</td>
-        <td>2017-2018</td>
-      </tr>
-      <tr>
-        <td>VFS Global</td>
-        <td>Manager</td>
-        <td>2018-2021</td>
-      </tr>
-      <tr>
-        <td>IntexSoft</td>
-        <td>Junior Frontend Developer</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>iTechArt Group</td>
-        <td>Software Engineer</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>Innowise Group</td>
-        <td>Trainee Programmer</td>
-        <td>2021</td>
-      </tr>
-    </tbody>
-  </table>
+        <h3>Social media list</h3>
 
-  <h2>Social media list</h2>
-  <a href="https://instagram.com/vlad_martsul" target="_blank">Instagram</a>
-  |
-  <a href="https://t.me/m_vlad95" target="_blank">Telegram</a>
-  |
-  <a href="https://vk.com/id91251318" target="_blank">VK</a>
+        <a href="https://instagram.com/vlad_martsul" target="_blank">Instagram</a>
+        |
+        <a href="https://t.me/m_vlad95" target="_blank">Telegram</a>
+        |
+        <a href="https://vk.com/id91251318" target="_blank">VK</a>
 
-  <h2>Contact me</h2>
-  <form action="#">
-    <div>
-      <label for="name">Your name:</label>
-      <input type="text" id="name" placeholder="Enter your name">
+      </div>
+
     </div>
-    <div>
-      <label for="email">Your email:</label>
-      <input type="email" id="email" placeholder="Enter your email">
+
+    <div class="card">
+
+      <h2>My hobbies</h2>
+
+      <ol class="list">
+        <li>Guitar</li>
+        <li>Skating</li>
+      </ol>
+
     </div>
-    <div>
-      <label for="message">Your message:</label>
-      <br>
-      <textarea id="message" cols="20" rows="5" placeholder="Enter message..."></textarea>
+
+    <div class="card">
+
+      <h2>Work Expirience</h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Work Name</th>
+            <th>Position</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GrodnoAutoService</td>
+            <td>Storekeeper</td>
+            <td>2017-2018</td>
+          </tr>
+          <tr>
+            <td>VFS Global</td>
+            <td>Manager</td>
+            <td>2018-2021</td>
+          </tr>
+          <tr>
+            <td>IntexSoft</td>
+            <td>Junior Frontend Developer</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>iTechArt Group</td>
+            <td>Software Engineer</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>Innowise Group</td>
+            <td>Trainee Programmer</td>
+            <td>2021</td>
+          </tr>
+        </tbody>
+      </table>
+
     </div>
-    <input type="submit" value="Submit">
-  </form>
+
+    <form action="#" class="form">
+      <h2>Contact me</h2>
+      <div class="form_row">
+        <div class="form_group">
+          <label for="name">Your name:</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form_group">
+          <label for="email">Your email:</label>
+          <input type="email" id="email" placeholder="Enter your email">
+        </div>
+      </div>
+      <div class="form_group">
+        <label for="message">Your message:</label>
+        <textarea id="message" cols="20" rows="5" placeholder="Enter message..."></textarea>
+      </div>
+      <div class="form_btn">
+        <input class="btn" type="submit" value="Submit">
+      </div>
+    </form>
+
+  </div>
 
 </body>
 
